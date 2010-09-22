@@ -1,4 +1,10 @@
 
+ The documentation is written in portuguese, since this project was developed for a
+ compilers course assignment. This was made in a short time and will not be updated
+ in future.
+
+
+
  SCURRY v2.01 - Dep. de Engenharia Informatica da Faculd. Ciencia e Tecnologia da UC
  -----------------------------------------------------------------------------------
  David Marquês Francisco       nº2007183509    <dmfranc@student.dei.uc.pt>
