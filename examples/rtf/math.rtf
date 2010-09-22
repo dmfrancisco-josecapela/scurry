@@ -1,0 +1,40 @@
+{\rtf1\ansi\deff0{\fonttbl{\f0\fmodern\fprq1\fcharset0;}}{\colortbl;\red128\green128\blue128;\red186\green33\blue33;\red0\green64\blue208;\red102\green102\blue102;\red64\green128\blue128;\red160\green160\blue0;\red25\green23\blue124;\red0\green128\blue0;\red187\green102\blue136;\red187\green102\blue34;\red136\green0\blue0;\red170\green34\blue255;\red153\green153\blue153;\red0\green160\blue0;\red160\green0\blue0;\red255\green0\blue0;\red128\green0\blue128;\red176\green0\blue64;\red0\green0\blue255;\red187\green187\blue187;\red188\green122\blue0;\red0\green0\blue128;\red125\green144\blue41;\red210\green65\blue58;}\f0{\cf5\i # SCURRY v2.01 - Dep. de Engenharia Informatica da Faculd. Ciencia e Tecnologia da UC}\par
+{\cf5\i # -----------------------------------------------------------------------------------}\par
+{\cf5\i # David Marques Francisco       n 2007183509    <dmfranc@student.dei.uc.pt>}\par
+{\cf5\i # Jose Antonio Capela Dias      n 2007183794    <jacdias@student.dei.uc.pt>}\par
+\par
+{\cf5\i # _________________ Operacoes matematicas com inteiros e reais ______________________}\par
+\par
+{\cf8\b int} add_ints({\cf8\b int} num0, {\cf8\b int} num1):\par
+	{\cf8\b result} {\cf4 =} num0 {\cf4 +} num1;\par
+{\cf8\b end}\par
+\par
+{\cf5\i # Devolve o valor correspondente a base ^ exp}\par
+{\cf8\b int} pow({\cf8\b int} base, {\cf8\b int} exp):\par
+	{\cf8\b result} {\cf4 =} {\cf4 1};\par
+	{\cf8\b for} a {\cf4 =} {\cf4 1} {\cf8\b to} exp:\par
+		{\cf8\b result} {\cf4 =} {\cf8\b result} {\cf4 *} base;\par
+	{\cf8\b end}\par
+{\cf8\b end}\par
+\par
+{\cf8\b main}:\par
+	{\cf8\b int} j {\cf4 =} {\cf4 1};\par
+	{\cf8\b int} res {\cf4 =} add_ints(j, {\cf4 2});\par
+	\par
+	{\cf8\b if} res {\cf4 ==} j {\cf4 +} {\cf4 2}:\par
+		{\cf8 print}({\cf2 '}{\cf2 j + 2 = }{\cf2 '});\par
+		{\cf8 println}(res);\par
+		{\cf8 print}({\cf2 '}{\cf10\b \\n}{\cf2 '});\par
+	{\cf8\b end}\par
+	\par
+	{\cf8 print}({\cf2 '}{\cf2 4.0 / 3.0 }{\cf10\b \\t}{\cf2  = }{\cf2 '});       {\cf8 println}({\cf4 4.0} {\cf4 /} {\cf4 3.0});\par
+	{\cf8 print}({\cf2 '}{\cf2 4 / 3     }{\cf10\b \\t}{\cf2  = }{\cf2 '});       {\cf8 println}({\cf4 4} {\cf4 /} {\cf4 3});\par
+	{\cf8 print}({\cf2 '}{\cf2 5 mod 3   }{\cf10\b \\t}{\cf2  = }{\cf2 '});       {\cf8 println}({\cf4 5} {\cf8\b mod} {\cf4 3});\par
+	{\cf8 print}({\cf2 '}{\cf2 2 * 6 / 2 }{\cf10\b \\t}{\cf2  = }{\cf2 '});       {\cf8 println}({\cf4 2} {\cf4 *} {\cf4 6} {\cf4 /} {\cf4 2});\par
+	{\cf8 println}({\cf2 '}{\cf2 '});\par
+	\par
+	{\cf8 print}({\cf2 '}{\cf2 5 + 10 / 2   }{\cf10\b \\t}{\cf2  = }{\cf2 '});    {\cf8 println}({\cf4 5}{\cf4 +}{\cf4 10}{\cf4 /}{\cf4 2});\par
+	{\cf8 print}({\cf2 '}{\cf2 (5 * 10) }{\cf2 %}{\cf2  3 }{\cf10\b \\t}{\cf2  = }{\cf2 '});    {\cf8 println}(({\cf4 5}{\cf4 *}{\cf4 10}){\cf4 %}{\cf4 3}); {\cf5\i # % equivale a mod}\par
+	{\cf8 print}({\cf2 '}{\cf2 2 ^ 4        }{\cf10\b \\t}{\cf2  = }{\cf2 '});    {\cf8 println}(pow({\cf4 2},{\cf4 4}));\par
+{\cf8\b end}\par
+}

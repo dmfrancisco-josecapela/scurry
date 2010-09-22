@@ -1,0 +1,37 @@
+{\rtf1\ansi\deff0{\fonttbl{\f0\fmodern\fprq1\fcharset0;}}{\colortbl;\red128\green128\blue128;\red186\green33\blue33;\red0\green64\blue208;\red102\green102\blue102;\red64\green128\blue128;\red160\green160\blue0;\red25\green23\blue124;\red0\green128\blue0;\red187\green102\blue136;\red187\green102\blue34;\red136\green0\blue0;\red170\green34\blue255;\red153\green153\blue153;\red0\green160\blue0;\red160\green0\blue0;\red255\green0\blue0;\red128\green0\blue128;\red176\green0\blue64;\red0\green0\blue255;\red187\green187\blue187;\red188\green122\blue0;\red0\green0\blue128;\red125\green144\blue41;\red210\green65\blue58;}\f0{\cf5\i # SCURRY v2.01 - Dep. de Engenharia Informatica da Faculd. Ciencia e Tecnologia da UC}\par
+{\cf5\i # -----------------------------------------------------------------------------------}\par
+{\cf5\i # David Marques Francisco       n 2007183509    <dmfranc@student.dei.uc.pt>}\par
+{\cf5\i # Jose Antonio Capela Dias      n 2007183794    <jacdias@student.dei.uc.pt>}\par
+\par
+{\cf5\i # _______________________________ Tipos de dados ____________________________________}\par
+\par
+{\cf5\i # Por default, os valores boolean sao impressos como 0 ou 1}\par
+{\cf5\i # Esta funcao permite imprimir 'true' or 'false' conforme o valor do parametro}\par
+{\cf8\b void} println_bool({\cf8\b bool} b):\par
+	b{\cf4 ?} {\cf8 println}({\cf2 '}{\cf2 true}{\cf2 '}) : {\cf8 println}({\cf2 '}{\cf2 false}{\cf2 '});\par
+{\cf8\b end}\par
+\par
+{\cf8\b main}:\par
+	{\cf8\b real} f {\cf4 =} {\cf4 3.2};\par
+	f {\cf4 =} {\cf4 1.0} {\cf4 +} f;\par
+	\par
+	{\cf8 print}({\cf2 "}{\cf2 Numeros reais: }{\cf10\b \\t}{\cf2 "});    {\cf8 println}(f);\par
+	{\cf8 print}({\cf2 "}{\cf2                }{\cf10\b \\t}{\cf2 "});    {\cf8 println}({\cf4 3.14159265});\par
+	\par
+	{\cf8\b int} i {\cf4 =} ({\cf4 20} {\cf4 *} {\cf4 3}) {\cf4 /} {\cf4 4};\par
+	\par
+	{\cf8 print}({\cf2 "}{\cf2 Inteiros: }{\cf10\b \\t}{\cf2 "});    	   {\cf8 println}(i);\par
+	{\cf8 print}({\cf2 "}{\cf2           }{\cf10\b \\t}{\cf2 "});    	   {\cf8 println}({\cf4 48121623});\par
+	\par
+	{\cf8\b char} a {\cf4 =} {\cf2 '}{\cf2 a}{\cf2 '};\par
+	\par
+	{\cf8 print}({\cf2 "}{\cf2 Caracteres: }{\cf10\b \\t}{\cf2 "});    	   {\cf8 println}(a);\par
+	{\cf8 print}({\cf2 "}{\cf2             }{\cf10\b \\t}{\cf2 "});    	   {\cf8 println}({\cf2 '}{\cf2 b}{\cf2 '});\par
+	\par
+	{\cf8\b bool} b {\cf4 =} {\cf8 false};\par
+	\par
+	{\cf8 print}({\cf2 "}{\cf2 Booleans: }{\cf10\b \\t}{\cf2 "});    	   println_bool({\cf12\b not} b);\par
+	{\cf8 print}({\cf2 "}{\cf2           }{\cf10\b \\t}{\cf2 "});    	   println_bool({\cf4 1} {\cf4 >} {\cf4 2});\par
+	{\cf8 print}({\cf2 "}{\cf2           }{\cf10\b \\t}{\cf2 "});    	   {\cf8 println}({\cf4 1} {\cf4 >} {\cf4 2});\par
+{\cf8\b end}\par
+}

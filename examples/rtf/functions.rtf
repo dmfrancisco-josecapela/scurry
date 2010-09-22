@@ -1,0 +1,44 @@
+{\rtf1\ansi\deff0{\fonttbl{\f0\fmodern\fprq1\fcharset0;}}{\colortbl;\red128\green128\blue128;\red186\green33\blue33;\red0\green64\blue208;\red102\green102\blue102;\red64\green128\blue128;\red160\green160\blue0;\red25\green23\blue124;\red0\green128\blue0;\red187\green102\blue136;\red187\green102\blue34;\red136\green0\blue0;\red170\green34\blue255;\red153\green153\blue153;\red0\green160\blue0;\red160\green0\blue0;\red255\green0\blue0;\red128\green0\blue128;\red176\green0\blue64;\red0\green0\blue255;\red187\green187\blue187;\red188\green122\blue0;\red0\green0\blue128;\red125\green144\blue41;\red210\green65\blue58;}\f0{\cf5\i # SCURRY v2.01 - Dep. de Engenharia Informatica da Faculd. Ciencia e Tecnologia da UC}\par
+{\cf5\i # -----------------------------------------------------------------------------------}\par
+{\cf5\i # David Marques Francisco       n 2007183509    <dmfranc@student.dei.uc.pt>}\par
+{\cf5\i # Jose Antonio Capela Dias      n 2007183794    <jacdias@student.dei.uc.pt>}\par
+\par
+{\cf5\i # ___________________________ Funcoes e procedimentos _______________________________}\par
+\par
+{\cf8\b void} inutil:\par
+{\cf8\b end}\par
+\par
+{\cf8\b void} inutil2:\par
+	{\cf8 println}({\cf2 '}{\cf2 teste}{\cf2 '});\par
+{\cf8\b end}\par
+\par
+{\cf8\b void} inutil3({\cf8\b real} r):\par
+	r {\cf4 =} {\cf4 1.5};\par
+	{\cf8 print}({\cf2 '}{\cf2 Valor de r igual a }{\cf2 '});\par
+	{\cf8 println}(r);\par
+{\cf8\b end}\par
+\par
+{\cf5\i # Calcula a funcao de fibonacci de um numero recebido por parametro}\par
+{\cf8\b int} fibonacci({\cf8\b int} f):\par
+	{\cf8\b if} f {\cf4 ==} {\cf4 0}:\par
+		{\cf8\b result} {\cf4 =} {\cf4 0};\par
+	{\cf8\b else} {\cf8\b if} f {\cf4 ==} {\cf4 1}:\par
+		{\cf8\b result} {\cf4 =} {\cf4 1};\par
+	{\cf8\b else}:\par
+		{\cf8\b result} {\cf4 =} fibonacci(f{\cf4 -}{\cf4 2}) {\cf4 +} fibonacci(f{\cf4 -}{\cf4 1});\par
+	{\cf8\b end}\par
+{\cf8\b end}\par
+\par
+{\cf8\b main}:\par
+	inutil;\par
+	inutil2;\par
+	\par
+	{\cf8\b real} r {\cf4 =} {\cf4 -}{\cf4 1.0};\par
+	inutil3(r);\par
+	{\cf8 print}({\cf2 '}{\cf2 Valor de r igual a }{\cf2 '});\par
+	{\cf8 println}(r);\par
+	\par
+	{\cf8 print}({\cf2 '}{\cf2 Fibonacci de 20 igual a }{\cf2 '});\par
+	{\cf8 println}(fibonacci({\cf4 20}));\par
+{\cf8\b end}\par
+}
