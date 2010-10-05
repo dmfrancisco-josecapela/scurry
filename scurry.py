@@ -60,10 +60,10 @@ parser.add_option("-i", "--instant",
 
 # Se não foi indicado o ficheiro de output
 if not options.filename:
-	if len(args) > 0:
-		options.filename = args[0].replace(".sc",".out")
-	else:
-		options.filename = "a.out"
+    if len(args) > 0:
+        options.filename = args[0].replace(".sc",".out")
+    else:
+        options.filename = "a.out"
 
 # Se foram passados parâmetros, o primeiro corresponde ao nome do ficheiro de input
 if len(args) > 0:

@@ -9,11 +9,11 @@
 global char b;
 
 main:
-	char a = 'a';
-	b = 'b';
+    char a = 'a';
+    b = 'b';
 
-	println(a);
-	println(b);
-	println('c');
-	println('0' + '1'); # ascii['0'] = 48, ascii['1'] = 49, ascii['a'] = 97
+    println(a);
+    println(b);
+    println('c');
+    println('0' + '1'); # ascii['0'] = 48, ascii['1'] = 49, ascii['a'] = 97
 end

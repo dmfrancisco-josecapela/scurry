@@ -9,12 +9,12 @@ global int x;
 
 # A passagem de parametros e feita por valor
 void myfunc(int param):
-	x = 2;
-	println(param); # Imprime 1
-	println(x); # Imprime 2
+    x = 2;
+    println(param); # Imprime 1
+    println(x); # Imprime 2
 end
 
 main:
-	x = 1;
-	myfunc(x);
+    x = 1;
+    myfunc(x);
 end

@@ -133,7 +133,7 @@ def check(node):
         current_node = node
 
         # PROGRAM
-    	if node.type in ["program"]:
+        if node.type in ["program"]:
             context_stack.push(Context())
             check(node.args)
             context_stack.pop()

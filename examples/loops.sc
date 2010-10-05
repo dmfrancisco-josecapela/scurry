@@ -7,40 +7,40 @@
 # _____________________________ Instrucoes de ciclo _________________________________
 
 main:
-	int a;
+    int a;
 
-	# Ciclo for decrescente
-	for a = 5 downto 1:
-		println(a);
-	end
+    # Ciclo for decrescente
+    for a = 5 downto 1:
+        println(a);
+    end
 
-	println('');
+    println('');
 
-	# Outra forma de codificar um ciclo decrescente
-	for a = 5 to 1, -1:
-		println(a);
-	end
+    # Outra forma de codificar um ciclo decrescente
+    for a = 5 to 1, -1:
+        println(a);
+    end
 
-	println('');
+    println('');
 
-	# Ciclo for com variavel de incremento
-	for a = 1 to 10, 2:
-		println(a);
-	end
+    # Ciclo for com variavel de incremento
+    for a = 1 to 10, 2:
+        println(a);
+    end
 
-	println('');
+    println('');
 
-	# Ciclo while
-	while a >= 5:
-		println(a);
-		a = a - 2;
-	end
+    # Ciclo while
+    while a >= 5:
+        println(a);
+        a = a - 2;
+    end
 
-	println('');
+    println('');
 
-	# Ciclo do-until
-	do:
-		println(a);
-		a = a * 2;
-	until a > 100;
+    # Ciclo do-until
+    do:
+        println(a);
+        a = a * 2;
+    until a > 100;
 end

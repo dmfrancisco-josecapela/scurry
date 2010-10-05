@@ -9,29 +9,29 @@
 # Por default, os valores boolean sao impressos como 0 ou 1
 # Esta funcao permite imprimir 'true' or 'false' conforme o valor do parametro
 void println_bool(bool b):
-	b? println('true') : println('false');
+    b? println('true') : println('false');
 end
 
 main:
-	real f = 3.2;
-	f = 1.0 + f;
+    real f = 3.2;
+    f = 1.0 + f;
 
-	print("Numeros reais: \t");    println(f);
-	print("               \t");    println(3.14159265);
+    print("Numeros reais: \t");    println(f);
+    print("               \t");    println(3.14159265);
 
-	int i = (20 * 3) / 4;
+    int i = (20 * 3) / 4;
 
-	print("Inteiros: \t");    	   println(i);
-	print("          \t");    	   println(48121623);
+    print("Inteiros: \t");         println(i);
+    print("          \t");         println(48121623);
 
-	char a = 'a';
+    char a = 'a';
 
-	print("Caracteres: \t");    	   println(a);
-	print("            \t");    	   println('b');
+    print("Caracteres: \t");       println(a);
+    print("            \t");       println('b');
 
-	bool b = false;
+    bool b = false;
 
-	print("Booleans: \t");    	   println_bool(not b);
-	print("          \t");    	   println_bool(1 > 2);
-	print("          \t");    	   println('1' > '2');
+    print("Booleans: \t");         println_bool(not b);
+    print("          \t");         println_bool(1 > 2);
+    print("          \t");         println('1' > '2');
 end

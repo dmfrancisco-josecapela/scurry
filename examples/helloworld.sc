@@ -7,6 +7,6 @@
 # ________________________________ Hello World! _____________________________________
 
 main:
-	# O famoso Hello World
-	println("Hello World!");
+    # O famoso Hello World
+    println("Hello World!");
 end

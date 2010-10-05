@@ -13,31 +13,31 @@ string = lambda x: Type.array(int, x)
 function = Type.function
 
 def procedure(*args):
-	return Type.function(void, args)
+    return Type.function(void, args)
 
 
 translation = {
-	"int":  int,
-	"real": real,
-	"char": char,
+    "int":  int,
+    "real": real,
+    "char": char,
     "bool": bool,
     "string": string
 }
 
 class ReverseDict(object):
-	def __init__(self,dic):
-		self.dic = dic
-	def __getitem__(self,p):
-		for k in self.dic:
-			if self.dic[k] == p:
-				return k
+    def __init__(self,dic):
+        self.dic = dic
+    def __getitem__(self,p):
+        for k in self.dic:
+            if self.dic[k] == p:
+                return k
 
 reverse_translation = ReverseDict(translation)
 
 defaults = {
-	"int":    0,
-	"real":   0.0,
-	"char":   '_',
+    "int":    0,
+    "real":   0.0,
+    "char":   '_',
     "bool":   0,
     "string": " ",
 }
